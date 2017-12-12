@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://bootstrap-3.ru/examples/jumbotron-narrow/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="js/header.css" />
+    <script src='js/Chart.min.js'></script>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="http://bootstrap-3.ru/assets/ico/favicon.ico">
+
+    <title>Lab3 MatMod</title>
+
+  <!-- Bootstrap core CSS -->
+    <link href="./Narrow Jumbotron Template for Bootstrap_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./Narrow Jumbotron Template for Bootstrap_files/jumbotron-narrow.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="jumbotron">
+          <h3>Лабораторная работа 3 <br> Математическое моделирование</h3>
+          <h6>Выполнила студентка гр.444601 Сироткина Диана</h6>
+          <input type="text" id="textvalue" class="form-control" value = "1000"><br>
+          <button class="btn btn-success" onclick="start()">Сгенерировать</button><br>
+          <div class="col-lg-12">
+          <div class="form-group col-lg-6">
+              <label for="MX">MX:</label>
+              <input type="text" class="form-control" id="MX" value = "none">
+              <label for="MX2">MX2</label>
+              <input type="text" class="form-control" id="MX2" value = "none">
+              <label for="DX">DX</label>
+              <input type="text" class="form-control" id="DX" value = "none">
+              <label for="sigmaX">SigmaX</label>
+              <input type="text" class="form-control" id="sigmaX" value = "none">
+          </div>
+          <div class="form-group col-lg-6">
+              <label for="MY">MY</label>
+              <input type="text" class="form-control" id="MY" value = "none">
+              <label for="MY2">MY2</label>
+              <input type="text" class="form-control" id="MY2" value = "none">
+              <label for="DY">DY</label>
+              <input type="text" class="form-control" id="DY" value = "none">
+              <label for="sigmaY">SigmaY</label>
+              <input type="text" class="form-control" id="sigmaY" value = "none">
+          </div>
+          <div class="form-group">
+
+              <label for="MXY">MXY</label>
+              <input type="text" class="form-control" id="MXY" value = "none">
+              <label for="Kxy">Kxy</label>
+              <input type="text" class="form-control" id="Kxy" value = "none">
+              <label for="Rxy">Rxy</label>
+              <input type="text" class="form-control" id="Rxy" value = "none">
+          </div>
+          </div>
+          <div>
+              <h3>Гистограмма распределения по X</h3>
+              <canvas id="incomeX" width="600" height="300"></canvas>
+              <h3>Гистограмма распределения по Y</h3>
+              <canvas id="incomeY" width="600" height="300"></canvas>
+              <p>Гистограмма распределения по XY</p>
+              <canvas id="incomeXY" width="600" height="300"></canvas>
+          </div>
+
+
+      </div>
+    </div>
+
+</body></html>
